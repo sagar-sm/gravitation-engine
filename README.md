@@ -1,7 +1,9 @@
-#OpenGL Particle Simulator to demo gravitation
+#OpenGL Gravitation physics graphics API
 
 ##Usage:
-Include "ParticleSystem.h"
+Build the sample project included within `/xcode` to demo the features of this graphics API.
+
+`#include "ParticleSystem.h"`
 
 ```
 //Create a New System
