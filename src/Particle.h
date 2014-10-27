@@ -21,7 +21,7 @@ public:
     Particle(Vec3f _pos, Vec3f _vel, float _radius, float _mass);
     Particle(Vec3f _pos, Vec3f _vel, float _radius, float _mass, bool _ils);
     
-    void draw(int resolution);
+    void draw(int resolution, int size);
     void update();
     
     Vec3f   pos, vel, acc;

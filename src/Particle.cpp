@@ -40,14 +40,12 @@ void Particle::update()
     acc = Vec3f::zero();
 }
 
-void Particle::draw(int size)
+void Particle::draw(int res, int size)
 {
-    if(isLightSource){
-
-    }
-    int resolution = 8;
-    if(size < 50 || radius >= 7)
-        resolution = 32;
-    gl::drawSphere( pos, radius, resolution );
+    if(res == -1)
+        if(size < 50 || radius >= 7)
+            res = 32;
+    
+    gl::drawSphere( pos, radius, res );
 //    gl::drawSolidCircle(Vec2f(pos.x, pos.y), 1);
 }

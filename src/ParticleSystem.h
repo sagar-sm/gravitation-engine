@@ -26,6 +26,7 @@ public:
     void draw();
     void update();
     void applyForces();
+    void setResolution(int res);
     
     list<Particle>  bodies;
     bool isClosed = false;

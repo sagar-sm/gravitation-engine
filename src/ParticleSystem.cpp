@@ -94,6 +94,10 @@ void ParticleSystem::draw()
 {
     gl::color( ColorA( 1.0f, 1.0f, 1.0f, 1.0f ) );
     for( list<Particle>::iterator p = bodies.begin(); p != bodies.end(); ++p ){
-        p->draw(bodies.size());
+        p->draw(resolution, bodies.size());
     }
+}
+
+void ParticleSystem::setResolution(int res) {
+    resolution = res;
 }
